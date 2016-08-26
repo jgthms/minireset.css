@@ -1,0 +1,24 @@
+{
+  "name": "minireset.css",
+  "version": "0.0.1",
+  "description": "A tiny modern CSS reset",
+  "main": "minireset.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgthms/minireset.css.git"
+  },
+  "keywords": [
+    "css",
+    "reset",
+    "mini"
+  ],
+  "author": "Jeremy Thomas <bbxdesign@gmail.com> (http://jgthms.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jgthms/minireset.css/issues"
+  },
+  "homepage": "https://github.com/jgthms/minireset.css#readme"
+}
