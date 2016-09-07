@@ -1,0 +1,15 @@
+{
+  "name": "minireset.css",
+  "version": "0.0.2",
+  "description": "A tiny modern CSS reset",
+  "main": "minireset.css",
+  "keywords": [
+    "css",
+    "reset",
+    "mini"
+  ],
+  "authors": [
+    "Jeremy Thomas <bbxdesign@gmail.com> (http://jgthms.com)"
+  ],
+  "license": "MIT"
+}
