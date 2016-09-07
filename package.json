@@ -4,7 +4,11 @@
   "description": "A tiny modern CSS reset",
   "main": "minireset.css",
   "scripts": {
+    "version": "sed -i -- \"s/`git describe --abbrev=0 --tags | sed s/v//`/$npm_package_version/g\" bower.json && git add bower.json",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "npm": ">= 2.13.2"
   },
   "repository": {
     "type": "git",
