@@ -23,8 +23,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 h1,
 h2,
@@ -33,30 +32,24 @@ h4,
 h5,
 h6 {
   font-size: 100%;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 button,
 input,
 select,
 textarea {
-  margin: 0;
-}
+  margin: 0; }
 
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 * {
-  box-sizing: inherit;
-}
-*:before, *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
+  *:before, *:after {
+    box-sizing: inherit; }
 
 img,
 embed,
@@ -64,20 +57,18 @@ object,
 audio,
 video {
   height: auto;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 iframe {
-  border: 0;
-}
+  border: 0; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 td,
 th {
   padding: 0;
-  text-align: left;
-}
+  text-align: left; }
+
+/*# sourceMappingURL=minireset.css.map */
