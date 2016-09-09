@@ -4,7 +4,8 @@
   "description": "A tiny modern CSS reset",
   "main": "minireset.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/jgthms/minireset.css/issues"
   },
-  "homepage": "https://github.com/jgthms/minireset.css#readme"
+  "homepage": "https://github.com/jgthms/minireset.css#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  }
 }
