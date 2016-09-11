@@ -1,0 +1,7 @@
+# Files
+.DS_Store
+npm-debug.log
+
+# Folders
+.sass-cache
+node_modules

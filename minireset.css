@@ -54,6 +54,7 @@ html {
 * {
   box-sizing: inherit;
 }
+
 *:before, *:after {
   box-sizing: inherit;
 }

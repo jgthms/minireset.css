@@ -4,7 +4,9 @@
   "description": "A tiny modern CSS reset",
   "main": "minireset.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build-sass && npm run build-min-sass",
+    "build-sass": "node-sass --output-style expanded minireset.sass minireset.css",
+    "build-min-sass": "node-sass --output-style compressed minireset.sass minireset.min.css"
   },
   "repository": {
     "type": "git",
@@ -12,6 +14,7 @@
   },
   "keywords": [
     "css",
+    "sass",
     "reset",
     "mini"
   ],
@@ -20,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/jgthms/minireset.css/issues"
   },
-  "homepage": "https://github.com/jgthms/minireset.css#readme"
+  "homepage": "https://github.com/jgthms/minireset.css#readme",
+  "devDependencies": {
+    "node-sass": "^3.9.3"
+  }
 }
