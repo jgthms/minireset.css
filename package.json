@@ -6,7 +6,9 @@
   "scripts": {
     "build": "npm run build-sass && npm run build-min-sass",
     "build-sass": "node-sass --output-style expanded minireset.sass minireset.css",
-    "build-min-sass": "node-sass --output-style compressed minireset.sass minireset.min.css"
+    "build-min-sass": "node-sass --output-style compressed minireset.sass minireset.min.css",
+    "docs": "node-sass --output-style compressed docs/docs.sass docs/docs.css",
+    "start": "npm run docs -- --watch"
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,10 @@
   "homepage": "https://github.com/jgthms/minireset.css#readme",
   "devDependencies": {
     "node-sass": "^3.9.3"
-  }
+  },
+  "files": [
+    "minireset.css",
+    "minireset.min.css",
+    "minireset.sass"
+  ]
 }

@@ -1,0 +1,219 @@
+@import "../minireset.sass"
+
+$grey: hsl(0, 0%, 40%)
+$grey-dark: hsl(0, 0%, 20%)
+$grey-darker: hsl(0, 0%, 10%)
+
+$blue: hsl(207, 98%, 52%)
+$green: hsl(147, 98%, 42%)
+$red: hsl(357, 98%, 62%)
+
+$primary: #fc0c18
+
+$background: #eee
+$border: #ddd
+
+$family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default
+$family-monospace: "Inconsolata", "Consolas", "Monaco", monospace !default
+
+html
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  background: #fff
+  color: $grey
+  font-family: $family-sans-serif
+  font-size: 18px
+  min-width: 300px
+  overflow-x: hidden
+  overflow-y: scroll
+  text-rendering: optimizeLegibility
+
+body
+  font-size: 1rem
+  font-weight: 300
+  line-height: 1.4
+  padding-bottom: calc((6.2rem * 3) - 2px)
+
+.header, .nav, .main
+  margin-left: auto
+  margin-right: auto
+  max-width: 25rem
+
+a
+  color: $primary
+  text-decoration: none
+
+strong
+  color: $grey-dark
+  font-weight: 600
+
+.content
+  background: white
+  padding: 3rem 1rem
+  position: relative
+  z-index: 1
+
+.header
+  text-align: center
+  figure
+    display: block
+    height: 160px
+    margin: 0 auto 1rem
+    width: 160px
+    img
+      display: block
+      height: 160px
+      width: 160px
+  h1
+    color: $grey-dark
+    font-size: 1.5rem
+    font-weight: 600
+    margin: 0
+  p
+    margin: 0
+
+.ghbtns
+  height: 30px
+  margin-bottom: 3rem
+  margin-top: 1rem
+  text-align: center
+  iframe
+    display: inline-block
+    vertical-align: top
+
+.nav
+  margin-bottom: 3rem
+  margin-top: 3rem
+  text-align: center
+
+.button, .or
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.button, .npm
+  align-items: center
+  border-radius: 3px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  line-height: 1.2
+  padding: 1.5rem
+  text-align: center
+  transition: background 86ms ease-out
+
+.button
+  background: $primary
+  color: #fff
+  cursor: pointer
+  font-size: 0.9rem
+  text-decoration: none
+  strong
+    color: #fff
+    font-size: 1.1em
+  span
+    display: block
+  small
+    display: block
+    opacity: 0.7
+  em
+    color: rgba(white, 0.5)
+    display: block
+    font-size: 0.8em
+    font-style: normal
+    margin-top: 0.5em
+  &:hover
+    background: $grey-darker
+
+.or
+  margin: 1rem
+
+.npm
+  background: $background
+  font-family: $family-monospace
+  font-size: 0.8rem
+
+.main
+  p
+    margin-bottom: 1em
+  a:hover
+    text-decoration: underline
+  ul
+    list-style: disc outside
+  li
+    + li
+      margin-top: 1em
+    strong
+      display: block
+      font-size: 1.1em
+      em
+        color: $red
+        font-style: normal
+        &.preserves
+          color: $green
+        &.sets
+          color: $blue
+
+.footer
+  background: $grey-darker
+  bottom: 0
+  box-shadow: inset 0 2rem 3rem black
+  color: hsl(0, 0%, 70%)
+  left: 0
+  padding-top: 2rem
+  position: fixed
+  right: 0
+  a
+    color: hsl(0, 0%, 30%)
+    display: block
+    line-height: 1
+    padding: 2rem
+    transition: background 29ms ease-out
+    span
+      display: block
+      font-size: 0.8rem
+      margin-bottom: 0.4rem
+    strong
+      color: hsl(0, 0%, 50%)
+      display: block
+      font-weight: normal
+      transition: background 29ms ease-out
+    &:hover
+      background: $red
+      color: rgba(black, 0.3)
+      strong
+        color: rgba(black, 0.5)
+    &:nth-child(2):hover
+      background: $blue
+    &:nth-child(3):hover
+      background: $green
+
+.fork-me
+  display: block
+  height: 140px
+  position: fixed
+  right: 0
+  top: 0
+  width: 140px
+  img
+    display: block
+    height: 140px
+    width: 140px
+
+@media (max-width: 699px)
+  .main
+    padding: 0 1rem 0 2rem
+  .fork-me
+    position: absolute
+
+@media (min-width: 700px)
+  body
+    padding-bottom: calc(6.2rem - 2px)
+  .content
+    padding: 5rem
+  .footer
+    display: flex
+    a
+      flex-grow: 1
