@@ -51,11 +51,7 @@ html {
   box-sizing: border-box;
 }
 
-* {
-  box-sizing: inherit;
-}
-
-*:before, *:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
