@@ -1,6 +1,7 @@
 # Files
 .DS_Store
 npm-debug.log
+yarn.lock
 
 # Folders
 .sass-cache
