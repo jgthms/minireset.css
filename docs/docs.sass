@@ -218,3 +218,105 @@ strong
     display: flex
     a
       flex-grow: 1
+
+.native-js
+  border-radius: 3px
+  display: none
+  font-size: 1rem
+  opacity: 0
+  margin-bottom: 3rem
+  margin-left: auto
+  margin-right: auto
+  max-width: 50rem
+  visibility: hidden
+
+.native-show
+  display: block
+  opacity: 1
+  visibility: visible
+
+.native-flex
+  align-items: center
+  display: flex
+  justify-content: center
+  padding: 2em
+  text-decoration: none
+
+.native-img
+  border-radius: 3px
+  flex-grow: 0
+  flex-shrink: 0
+  height: 50px
+  width: 125px
+
+.native-details
+  flex-grow: 1
+  flex-shrink: 1
+
+.native-main
+  align-items: center
+  flex-grow: 0
+  flex-shrink: 1
+  max-width: 640px
+
+.native-company
+  display: block
+  font-size: 0.625em
+  letter-spacing: 2px
+  margin-bottom: 4px
+  text-transform: uppercase
+
+.native-desc
+  display: block
+
+.native-cta
+  border: none
+  border-radius: 3px
+  box-shadow: 0 6px 13px 0 hsla(0, 0%, 0%, .15)
+  display: inline-block
+  flex-grow: 0
+  flex-shrink: 0
+  font-size: 0.75em
+  font-weight: 400
+  padding: 0.75em 1em
+  text-transform: uppercase
+  transform: translateY(-1px)
+  transition: transform .3s ease-in-out
+  vertical-align: top
+  white-space: nowrap
+  &:hover
+    box-shadow: none
+    transform: translateY(1px)
+
+$native-bp: 600px
+
+=from($device)
+  @media screen and (min-width: $device)
+    @content
+
+=until($device)
+  @media screen and (max-width: $device - 1px)
+    @content
+
++until($native-bp)
+  .native-flex
+    display: block
+    text-align: center
+  .native-main
+    margin-bottom: 2em
+  .native-details
+    margin: 1em
+
++from($native-bp)
+  .native-flex
+    display: flex
+    text-align: left
+  .native-main
+    display: flex
+    margin-right: 2em
+  .native-details
+    margin-left: 2em
+
++from($native-bp * 2)
+  .native-js
+    font-size: 1.25rem

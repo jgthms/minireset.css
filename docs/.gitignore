@@ -1,0 +1,10 @@
+# Files
+
+.DS_Store
+.jekyll-metadata
+_config.local.yml
+
+# Folders
+
+.sass-cache
+_site
