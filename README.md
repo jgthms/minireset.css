@@ -17,6 +17,10 @@ A tiny modern CSS reset that covers the basics:
 ```sh
 npm install minireset.css
 ```
+## CDN
+
+[Min.css](https://cdn.rawgit.com/jgthms/minireset.css/master/minireset.min.css)
+
 
 Or download/clone the repo.
 
