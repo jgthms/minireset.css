@@ -1,6 +1,6 @@
 {
   "name": "minireset.css",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A tiny modern CSS reset",
   "main": "minireset.css",
   "scripts": {
