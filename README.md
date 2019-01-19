@@ -1,4 +1,4 @@
-# MiniReset.css
+# minireset.css
 
 [![npm](https://img.shields.io/npm/v/minireset.css.svg)](https://www.npmjs.com/package/minireset.css)
 [![npm](https://img.shields.io/npm/dm/minireset.css.svg)](https://www.npmjs.com/package/minireset.css)
@@ -12,18 +12,20 @@ A tiny modern CSS reset that covers the basics:
 * **sets the border-box box sizing**: so that borders and paddings don't affect the set dimensions
 * **sets responsive media elements**: so that images and embeds scale with the browser width
 
-## Install
+## Download/Install
+
+[Download the latest version](https://raw.githubusercontent.com/jgthms/minireset.css/master/minireset.min.css)
 
 ```sh
 npm install minireset.css
 ```
+
+Or clone the repo.
+
 ## CDN
 
-[Min.css](https://cdn.rawgit.com/jgthms/minireset.css/master/minireset.min.css)
-
-
-Or download/clone the repo.
+[GitHub CDN for minireset.min.css](https://cdn.rawgit.com/jgthms/minireset.css/master/minireset.min.css)
 
 ## Copyright and license
 
-Code copyright 2017 Jeremy Thomas. Code released under [the MIT license](https://github.com/jgthms/minireset.css/blob/master/LICENSE).
+Code copyright 2019 Jeremy Thomas. Code released under [the MIT license](https://github.com/jgthms/minireset.css/blob/master/LICENSE).
