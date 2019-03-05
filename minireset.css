@@ -47,6 +47,13 @@ textarea {
   margin: 0;
 }
 
+/* fix firefox dark GTK theme issue */
+input,
+textarea {
+  background-color: #fff;
+  color: #000;
+}
+
 html {
   box-sizing: border-box;
 }
