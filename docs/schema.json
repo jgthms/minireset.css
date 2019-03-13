@@ -1,1 +1,35 @@
 
+{
+  "@context": "http://schema.org",
+  "items": [
+    {
+      "@type": "WebSite",
+      "name": "minireset.css",
+      "description": "A tiny modern CSS reset",
+      "creator": {
+        "@type": "Person",
+        "givenName": "Jeremy",
+        "familyName": "Thomas",
+        "additionalName": "@jgthms",
+        "url": "http://jgthms.com/"
+      },
+      "image": "http://jgthms.com/minireset.css/images/minireset.png"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "minireset.css",
+      "description": "A tiny modern CSS reset",
+      "keywords": "css, reset",
+      "creator": {
+        "@type": "Person",
+        "givenName": "Jeremy",
+        "familyName": "Thomas",
+        "additionalName": "@jgthms",
+        "url": "http://jgthms.com/"
+      },
+      "codeRepository": "http://github.com/jgthms/minireset.css",
+      "license": "http://github.com/jgthms/minireset.css/blob/master/LICENSE",
+      "image": "http://jgthms.com/minireset.css/images/minireset.png"
+    }
+  ]
+}
