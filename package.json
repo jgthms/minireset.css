@@ -1,6 +1,6 @@
 {
   "name": "minireset.css",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A tiny modern CSS reset",
   "main": "minireset.css",
   "scripts": {
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/jgthms/minireset.css#readme",
   "devDependencies": {
-    "node-sass": "^3.9.3"
+    "node-sass": "^4.12.0"
   },
   "files": [
     "minireset.css",
