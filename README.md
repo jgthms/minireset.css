@@ -22,6 +22,13 @@ npm install minireset.css
 
 Or clone the repo.
 
+## Options
+It will be available in your modules directory in `/node_modules/minireset.css/`:
+* `minireset.css`: CSS rules
+* `minireset.min.css`: minified CSS rules (recommended for production sites)
+* `minireet.sass`: CSS rules written in SASS (recommended for SCSS/SASS projects)
+* `minireset.css.lit.js`: CSS rules exported as a `CSSResult` object for [LitElement](https://lit-element.polymer-project.org/) projects (recommended for Web Component projects based on LitElement)
+
 ## CDN
 
 [GitHub CDN for minireset.min.css](https://cdn.rawgit.com/jgthms/minireset.css/master/minireset.min.css)
