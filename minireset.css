@@ -73,9 +73,20 @@ table {
 td,
 th {
   padding: 0;
+  text-align: left;
 }
 
-td:not([align]),
-th:not([align]) {
+td[align=left],
+th[align=left] {
   text-align: left;
+}
+
+td[align=center],
+th[align=center] {
+  text-align: center;
+}
+
+td[align=right],
+th[align=right] {
+  text-align: right;
 }
