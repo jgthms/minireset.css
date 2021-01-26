@@ -1,12 +1,13 @@
 {
   "name": "minireset.css",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A tiny modern CSS reset",
   "main": "minireset.css",
   "scripts": {
-    "build": "npm run build-sass && npm run build-min-sass",
+    "build": "npm run build-sass && npm run build-min-sass && npm run build-lit-js",
     "build-sass": "node-sass --output-style expanded minireset.sass minireset.css",
     "build-min-sass": "node-sass --output-style compressed minireset.sass minireset.min.css",
+    "build-lit-js": "rollup --config",
     "docs": "node-sass --output-style compressed docs/docs.sass docs/docs.css",
     "start": "npm run docs -- --watch"
   },
@@ -27,11 +28,14 @@
   },
   "homepage": "https://github.com/jgthms/minireset.css#readme",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.12.0",
+    "rollup": "^2.7.6",
+    "rollup-plugin-lit-css": "^2.0.3"
   },
   "files": [
     "minireset.css",
     "minireset.min.css",
+    "minireset.css.lit.js",
     "minireset.sass"
   ]
 }
