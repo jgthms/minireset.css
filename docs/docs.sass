@@ -33,10 +33,21 @@ body
   line-height: 1.4
   padding-bottom: calc((6.2rem * 3) - 2px)
 
-.header, .nav, .main
+.header, .snippets, .nav, .main
   margin-left: auto
   margin-right: auto
-  max-width: 25rem
+  max-width: 29rem
+
+.snippets
+  max-width: 58rem
+
+.snippet
+  position: relative
+  button
+    cursor: pointer
+    position: absolute
+    right: 0.5em
+    top: 0.5em
 
 a
   color: $primary
@@ -83,7 +94,7 @@ strong
 
 .nav
   margin-bottom: 3rem
-  margin-top: 3rem
+  margin-top: 1rem
   text-align: center
 
 .button, .or
@@ -93,16 +104,24 @@ strong
   -ms-user-select: none
   user-select: none
 
+.html, .css, .button, .npm
+  border-radius: 3px
+  line-height: 1.2
+  padding: 1.5rem
+  transition: background 86ms ease-out
+
+.html, .css
+  background-color: $grey-dark
+  font-family: $family-monospace
+  font-size: 0.8rem
+  text-align: left
+
 .button, .npm
   align-items: center
-  border-radius: 3px
   display: flex
   flex-direction: column
   justify-content: center
-  line-height: 1.2
-  padding: 1.5rem
   text-align: center
-  transition: background 86ms ease-out
 
 .button
   background: $primary
@@ -125,10 +144,11 @@ strong
     font-style: normal
     margin-top: 0.5em
   &:hover
-    background: $grey-darker
+    background: darken($primary, 20%)
 
 .or
   margin: 1rem
+  text-align: center
 
 .npm
   background: $background
@@ -320,3 +340,56 @@ $native-bp: 600px
 +from($native-bp * 2)
   .native-js
     font-size: 1.25rem
+
+// Background
+$dt-gray-dark: #282a36
+// Current Line & Selection
+$dt-gray: #44475a
+// Foreground
+$dt-gray-light: #f8f8f2
+// Comment
+$dt-blue: #6272a4
+
+$dt-cyan: #8be9fd
+$dt-green: #50fa7b
+$dt-orange: #ffb86c
+$dt-pink: #ff79c6
+$dt-purple: #bd93f9
+$dt-red: #ff5555
+$dt-yellow: #f1fa8c
+
+.hljs
+  background-color: $dt-gray-dark
+  color: $dt-gray-light
+  white-space: pre-wrap
+  word-break: break-word
+
+.hljs-comment
+  color: $dt-blue
+
+.hljs-tag
+  color: $dt-cyan
+
+.hljs-name
+  color: $dt-orange
+
+.hljs-attr
+  color: $dt-purple
+
+.hljs-string
+  color: $dt-red
+
+.hljs-keyword
+  color: $dt-cyan
+
+@media (prefers-color-scheme: dark)
+  html, .content
+    background-color: $grey-darker
+    color: #888
+  .header h1, strong
+    color: #fff
+  .npm
+    background: $grey-dark
+    color: #888
+  .footer
+    background: darken($grey-darker, 5%)

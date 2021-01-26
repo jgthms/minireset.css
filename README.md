@@ -31,7 +31,7 @@ It will be available in your modules directory in `/node_modules/minireset.css/`
 
 ## CDN
 
-[GitHub CDN for minireset.min.css](https://cdn.rawgit.com/jgthms/minireset.css/master/minireset.min.css)
+[GitHub CDN for minireset.min.css](https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css)
 
 ## Copyright and license
 
