@@ -15,6 +15,7 @@ legend,
 textarea,
 pre,
 iframe,
+menu
 hr,
 h1,
 h2,
@@ -67,10 +68,6 @@ img,
 video {
   height: auto;
   max-width: 100%;
-}
-
-menu {
-  margin: 0;
 }
 
 iframe {
