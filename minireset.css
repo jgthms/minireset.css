@@ -69,6 +69,10 @@ video {
   max-width: 100%;
 }
 
+menu {
+  margin: 0;
+}
+
 iframe {
   border: 0;
 }
