@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/jgthms/minireset.css#readme",
   "devDependencies": {
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "rollup": "^2.7.6",
     "rollup-plugin-lit-css": "^2.0.3"
   },
