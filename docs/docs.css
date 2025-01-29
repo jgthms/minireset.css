@@ -235,6 +235,9 @@ strong {
   left: 0;
   padding-top: 2rem;
   position: fixed;
+  font-family: "Anton SC", serif;
+  font-weight: 400;
+  font-style: normal;
   right: 0; }
   .footer a {
     color: #4d4d4d;
